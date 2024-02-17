@@ -1,0 +1,11 @@
+connections/org.eclipse.remote.serial.core.connectionType/chichi/serial.baudRate=6
+connections/org.eclipse.remote.serial.core.connectionType/chichi/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/chichi/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/chichi/serial.portName=COM10
+connections/org.eclipse.remote.serial.core.connectionType/chichi/serial.stopBits=0
+connections/org.eclipse.remote.serial.core.connectionType/wadie/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/wadie/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/wadie/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/wadie/serial.portName=COM10
+connections/org.eclipse.remote.serial.core.connectionType/wadie/serial.stopBits=0
+eclipse.preferences.version=1

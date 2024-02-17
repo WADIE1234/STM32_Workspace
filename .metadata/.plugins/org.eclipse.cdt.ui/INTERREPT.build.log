@@ -1,0 +1,17 @@
+23:21:11 **** Incremental Build of configuration Debug for project INTERREPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "INTERREPT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\MSI\STM32CubeIDE\workspace_1.14.1\INTERREPT\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="INTERREPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: INTERREPT.elf
+ 
+arm-none-eabi-size  INTERREPT.elf 
+arm-none-eabi-objdump -h -S INTERREPT.elf  > "INTERREPT.list"
+   text	   data	    bss	    dec	    hex	filename
+   6084	     20	   1572	   7676	   1dfc	INTERREPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: INTERREPT.list
+ 
+
+23:21:12 Build Finished. 0 errors, 0 warnings. (took 542ms)
+

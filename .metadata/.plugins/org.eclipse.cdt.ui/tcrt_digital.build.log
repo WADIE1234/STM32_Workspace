@@ -1,0 +1,21 @@
+22:12:18 **** Incremental Build of configuration Debug for project tcrt_digital ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:19: warning: unused variable 'tcrtValue' [-Wunused-variable]
+  101 |           uint8_t tcrtValue = readTCRTValue();
+      |                   ^~~~~~~~~
+arm-none-eabi-gcc -o "tcrt_digital.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\MSI\STM32CubeIDE\workspace_1.14.1\tcrt_digital\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tcrt_digital.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tcrt_digital.elf
+ 
+arm-none-eabi-size  tcrt_digital.elf 
+arm-none-eabi-objdump -h -S tcrt_digital.elf  > "tcrt_digital.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	     20	   1572	   7372	   1ccc	tcrt_digital.elf
+Finished building: default.size.stdout
+ 
+Finished building: tcrt_digital.list
+ 
+
+22:12:19 Build Finished. 0 errors, 1 warnings. (took 560ms)
+
